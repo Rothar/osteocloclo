@@ -1,16 +1,19 @@
-<div class="widget widget-latest-post">
-    <h4 class="widget-title">{{ i18n "latest_posts" }} <a href="../" title="Retour" class="right"><i class="icon ion-arrow-return-left"></i></a></h4>
+    <ul>
     {{ range first 4 (where site.Pages "Type" "post") }}
-    <div class="media">
+    <li class="item">
+      <div class="media">
+      <div class="media-left mr-3">
       <a class="pull-left" href="{{ .RelPermalink }}">
         {{ if isset .Params "image" }}
-        <img class="media-object" src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
+        <img class="media-object" src="{{ .Params.image | relURL }}" alt="{{ .Title }}" loading="lazy">
         {{ end }}
       </a>
+      </div>
       <div class="media-body">
-        <h4 class="media-heading"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+        <h5><a href="{{ .RelPermalink }}">{{ .Title }}</a></h5>
         <p>{{ .Summary | truncate 50 }}</p>
       </div>
     </div>
+    </li>
     {{ end }}
-  </div>
+  </ul>

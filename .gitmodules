@@ -1,0 +1,6 @@
+[submodule "medic"]
+	path = medic
+	url = https://github.com/Rothar/medic.git
+[submodule "themes/medic"]
+	path = themes/medic
+	url = https://github.com/Rothar/medic.git

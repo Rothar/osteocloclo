@@ -1,0 +1,13 @@
+<div class="categorise-menu">
+  <div class="text-title"><h6>{{ i18n "categories" }}</h6>
+  {{- if isset site.Taxonomies "categories" }}
+  {{- if not (eq (len site.Taxonomies.categories) 0) }}
+  <ul class="categorise-list">
+    {{- range $name := site.Taxonomies.categories }}
+    <li><a href="{{ .Page.RelPermalink }}"{{ if (and (eq $.Page.Kind "term") (eq $.Page.Type "categories") (eq $.Page.Title .Page.Title)) }} class="current"{{ end }}>{{ .Page.Title }}</a></li>
+    {{- end }}
+  </ul>
+  {{- end }}
+  {{- end }}
+</div>
+</div>

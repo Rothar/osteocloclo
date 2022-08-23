@@ -1,0 +1,158 @@
+baseURL = 'https://www.ostecloclo/'
+languageCode = 'fr-FR'
+defaultContentLanguage = "fr"
+
+title = 'Chloé Péquignot | Ostéophatie pour animaux | Bien être animal'
+
+################################# Default parameters ##########################
+[params]
+logo = "favicon-96x96.png"
+description = "Chloé Péquignot | Ostéophatie pour animaux | Bien être animal | soin des animaux domestiques : entorse, arthrose, anxiété, sensibilité du dos..."
+desc_footer = "Analyse, conseil, préconisation et contrôle des soins dans le temps"
+author = "Chloé Péquignot"
+bgi_title = "images/general/mylittlepony.jpg"
+
+[params.contact]
+email = "psiolia@gmail.com"
+phone = "+ 33 6 00 00 00 00"
+address = "1 rue cloclosteo 25000 Montbéliard"
+opening = "Lundi - 14h-18h / Mardi - Samedi 09h-18h"
+
+
+
+################################# Social Media ################################
+[[params.social]]
+icon = "fa-google-plus-g" 
+link = "#"
+aria = "Google plus"
+
+[[params.social]]
+icon = "fa-linkedin" 
+link = "#"
+aria = "LinkedIn"
+
+[[params.social]]
+icon = "fa-pinterest" 
+link = "#"
+aria = "Pinterest"
+
+[[params.social]]
+icon = "fa-instagram" 
+link = "http://test2"
+aria = "Instagram"
+
+[[params.social]]
+icon = "fa-twitter" 
+link = "#"
+aria = "Twitter"
+
+[[params.social]]
+icon = "fa-facebook-f" 
+link = "http://test"
+aria = "Facebook"
+
+
+################################################################################
+[languages]
+  [languages.fr]
+    contentDir = "content/fr"
+    languageName = "French"
+    weight = 1
+
+[[languages.fr.menu.main]]
+hasChildren = true
+weight = 5
+name = "Plus"
+
+[sitemap]
+    changefreq = "weekly"
+    filename = "sitemap.xml"
+    priority = 0.5
+
+################################# Preloader ###################################
+[params.preloader]
+enable = true
+preloader = "" # use .png , .svg or .gif image
+
+################################# widgets side bar #############################
+[params.widgets]
+sidebar = ["taxonomy_category", "taxonomy_tags"]
+
+################################# plugins ######################################
+# CSS Plugins
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+attributes = "media='screen'"
+
+[[params.plugins.css]]
+link = "plugins/slick/slick.css"
+attributes = ""
+
+[[params.plugins.css]]
+link = "plugins/slick/slick-theme.css"
+attributes = ""
+
+[[params.plugins.css]]
+link = "plugins/fancybox/jquery.fancybox.min.css"
+attributes = ""
+
+[[params.plugins.css]]
+link = "plugins/fontawesome/css/all.min.css"
+attributes = ""
+
+[[params.plugins.css]]
+link = "plugins/animation/animate.min.css"
+attributes = ""
+
+[[params.plugins.css]]
+link = "plugins/jquery-ui/jquery-ui.css"
+attributes = ""
+
+[[params.plugins.css]]
+link = "plugins/timePicker/timePicker.css"
+attributes = ""
+
+[[params.plugins.css]]
+link = "css/style.css"
+attributes = "media='screen'"
+
+# JS Plugins
+[[params.plugins.js]]
+link = "plugins/jquery.min.js"
+attributes = ""
+
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+attributes = ""
+
+[[params.plugins.js]]
+link = "plugins/slick/slick.min.js"
+attributes = ""
+
+[[params.plugins.js]]
+link = "plugins/slick/slick-animation.min.js"
+attributes = ""
+
+[[params.plugins.js]]
+link = "plugins/fancybox/jquery.fancybox.min.js"
+attributes = ""
+
+[[params.plugins.js]]
+link = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"
+attributes = "defer"
+
+[[params.plugins.js]]
+link = "plugins/google-map/gmap.js"
+attributes = ""
+
+[[params.plugins.js]]
+link = "plugins/jquery-ui/jquery-ui.js"
+attributes = ""
+
+[[params.plugins.js]]
+link = "plugins/timePicker/timePicker.js"
+attributes = ""
+
+[[params.plugins.js]]
+link = "js/script.js"
+attributes = ""

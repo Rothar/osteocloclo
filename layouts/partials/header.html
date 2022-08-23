@@ -1,0 +1,98 @@
+<div class="page-wrapper"> <!-- end in footer -->
+<!--header top-->
+<div class="header-top">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <div class="top-left text-center text-md-left">
+          <h6>{{ i18n "opening_hours" }} : {{ site.Params.contact.opening }}</h6>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="top-right text-center text-md-right">
+          <ul class="social-links">
+            {{ partial "_socialmedia.html" . }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--header top-->
+
+<!--Header Upper-->
+<section class="header-uper">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-xl-4 col-lg-3">
+        {{ partial "_logo.html" . }}
+      </div>
+      <div class="col-xl-8 col-lg-9">
+        <div class="right-side">
+          <ul class="contact-info pl-0 mb-4 mb-md-0">
+            <li class="item text-left">
+              <div class="icon-box">
+                <i class="far fa-envelope"></i>
+              </div>
+              <strong>{{ i18n "email" }}</strong>
+              <br>
+              <a href="mailto:{{ site.Params.contact.email }}">
+                <span>{{ site.Params.contact.email }}</span>
+              </a>
+            </li>
+            <li class="item text-left">
+              <div class="icon-box">
+                <i class="fas fa-phone"></i>
+              </div>
+              <strong>{{ i18n "phone" }}</strong>
+              <br>
+              <span>{{ site.Params.contact.phone }}</span>
+            </li>
+          </ul>
+          <div class="link-btn text-center text-lg-right">
+            <a href="/contact" class="btn-style-one">{{ i18n "appointment" }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Header Upper-->
+
+
+<!--Main Header-->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarLinks">
+
+      <ul class="nav navbar-nav navbar-right">
+      <ul class="navbar-nav">
+        {{ $currentPage := . -}}
+        {{ range site.Menus.main -}}
+        {{ if .HasChildren -}}
+        <li class="dropdown{{ if $currentPage.HasMenuCurrent "main" . }} active{{ end }}">
+          <a href="#" class="nav-link dropdown-toggle{{ if $currentPage.HasMenuCurrent "main" . }} current-parent{{ end }}" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            {{ .Name }} <span class="ion-ios-arrow-down"></span>
+          </a>
+          <ul class="dropdown-menu">
+            {{ range .Children -}}
+            <li {{ if $currentPage.IsMenuCurrent "main" . }} class="active" {{ end }}><a href="{{ .URL | relLangURL }}"{{ if $currentPage.IsMenuCurrent "main" . }} class="current dropdown-item active" {{ else }} class="dropdown-item" {{ end }}>{{ .Name }}</a></li>
+            {{- end }}
+          </ul>
+        </li>
+        {{ else -}}
+        <li class="nav-item{{ if $currentPage.IsMenuCurrent "main" . }} active{{ else if and (in (slice "post" "categories" "tags") $currentPage.Type) (eq .Identifier "blog") }} active {{ end }}"><a href="{{ .URL | relLangURL }}"{{ if $currentPage.IsMenuCurrent "main" . }} class="current nav-link"{{ else if and (in (slice "post" "categories" "tags") $currentPage.Type) (eq .Identifier "blog") }} class="current-parent nav-link" {{ else }} class="nav-link" {{ end }}>{{ .Name }}</a></li>
+        {{- end }}
+        {{- end }}
+        </ul>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--End Main Header -->
+
+{{ partial "_subtitle.html" . }}

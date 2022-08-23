@@ -1,0 +1,40 @@
+{{ define "main" }}
+
+<!-- checking blog -->
+{{ if or (eq .Section "post") (eq .Section "posts") (eq .Section "blog") (eq .Section "blogs") (eq .Section "news") (eq .Section "categories") (eq .Section "tags") }}
+
+<section class="blog-section section style-four style-five">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9">
+          <div class="left-side">
+				<div class="item-holder">
+					<div class="image-box">
+						<figure>
+						{{ with .Params.image -}}
+									<img class="img-responsive img-fluid" loading="lazy" src="{{ . | relURL }}" alt="{{ $.Title }}">
+						{{- end }}
+						</figure>
+					</div>
+					<div class="content-text">
+						<h4>{{ .Title }}</h4>
+						<span>{{ partial "date_i18n.html" (dict "date" .PublishDate "lang" .Page.Language.Lang) }}</span>
+						{{ .Content }}
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3">
+			{{ partial "blog-sidebar.html" . }}
+		</div>
+	  </div>
+	</div>
+</section>
+
+<!-- regular page -->
+{{ else -}}
+{{ .Render "default" }}
+{{- end }}
+<!-- /regular page -->
+
+{{ end }}

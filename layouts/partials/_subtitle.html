@@ -1,0 +1,21 @@
+<!--Page Title-->
+{{ if not (in .Kind "home") }}
+{{ if isset .Params "bgi_title" }} 
+<section class="page-title text-center" style="background-image:url('{{ .Params.bgi_title | relURL}}');">
+{{ else }}
+<section class="page-title text-center" style="background-image:url('{{ site.Params.bgi_title | relURL}}');">
+{{ end }}
+    <div class="container">
+        <div class="title-text">
+            <h1>{{ .Title }}</h1>
+            <ul class="title-menu clearfix">
+                <li>
+                    <a href="index.html">home &nbsp;/</a>
+                </li>
+                <li>{{ .Title }} </li>
+            </ul>
+        </div>
+    </div>
+</section>
+{{ end }}
+<!--End Page Title-->

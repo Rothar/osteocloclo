@@ -1,0 +1,106 @@
+{{ define "main" }}
+
+<!-- checking blog -->
+{{ if or (eq .Section "post") (eq .Section "posts") (eq .Section "blog") (eq .Section "blogs") (eq .Section "categories") (eq .Section "tags") }}
+
+<section class="blog-section style-four section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9">
+          <div class="left-side">
+				{{ $paginator := .Paginate .Data.Pages -}}
+					{{ range $paginator.Pages -}}
+						<div class="post item-holder">
+							<div class="image-box">
+								{{ if isset .Params "image" -}}
+								<figure>
+									<a href="{{ .RelPermalink }}"><img loading="lazy" class="img-fluid" src="{{ .Params.image | relURL }}" alt="{{ .Title }}"></a>
+								</figure>
+								{{- end }}
+							</div>
+							<div class="content-text">
+								<a href="{{ .RelPermalink }}"><h4>{{ .Title }}</h4></a>
+								<span>{{ partial "date_i18n.html" (dict "date" .PublishDate "lang" .Page.Language.Lang) }}</span>
+									<p>{{ .Summary }}</p>
+									<div class="link-btn"><a href="{{ .RelPermalink }}" class="btn-style-one">{{ i18n "read_more" }}</a></div>
+							</div>
+						</div>
+					{{- end }}
+
+						<!-- pagination -->
+						{{ $paginator := .Paginator -}}
+						{{ $adjacent_links := 2 -}}
+						{{ $max_links := (add (mul $adjacent_links 2) 1) -}}
+						{{ $lower_limit := (add $adjacent_links 1) -}}
+						{{ $upper_limit := (sub $paginator.TotalPages $adjacent_links) -}}
+						{{ if gt $paginator.TotalPages 1 -}}
+							<nav class="text-center">
+								<ul class="pagination post-pagination">
+									<!-- Previous page. -->
+									{{ if $paginator.HasPrev -}}
+									<li>
+										<a href="{{ $paginator.Prev.URL }}" class="page-link">{{ i18n "page_prev" }}</a>
+									</li>
+									{{- end }}
+									<!-- Page numbers. -->
+									{{ range $paginator.Pagers -}}
+									{{ $page_number_flag := false -}}
+									<!-- Advanced page numbers. -->
+									{{ if gt $paginator.TotalPages $max_links -}}
+									<!-- Lower limit pages. -->
+									<!-- If the user is on a page which is in the lower limit.  -->
+									{{ if le $paginator.PageNumber $lower_limit -}}
+									<!-- If the current loop page is less than max_links. -->
+									{{ if le .PageNumber $max_links -}}
+									{{ $page_number_flag = true -}}
+									{{ end -}}
+									<!-- Upper limit pages. -->
+									<!-- If the user is on a page which is in the upper limit. -->
+									{{ else if ge $paginator.PageNumber $upper_limit -}}
+									<!-- If the current loop page is greater than total pages minus $max_links -->
+									{{ if gt .PageNumber (sub $paginator.TotalPages $max_links) -}}
+									{{ $page_number_flag = true -}}
+									{{ end -}}
+									<!-- Middle pages. -->
+									{{ else -}}
+									{{ if and (ge .PageNumber (sub $paginator.PageNumber $adjacent_links)) (le .PageNumber (add $paginator.PageNumber $adjacent_links)) -}}
+									{{ $page_number_flag = true -}}
+									{{ end -}}
+									{{ end -}}
+									<!-- Simple page numbers. -->
+									{{ else -}}
+									{{ $page_number_flag = true -}}
+									{{ end -}}
+									<!-- Output page numbers. -->
+									{{ if eq $page_number_flag true -}}
+									<li class="{{ if eq . $paginator }} active {{ end }}">
+										<a href="{{ .URL }}">
+											{{ .PageNumber }}
+										</a>
+									</li>
+									{{- end }}
+									{{- end }}
+									<!-- Next page. -->
+									{{ if $paginator.HasNext -}}
+									<li>
+										<a href="{{ $paginator.Next.URL }}">{{ i18n "page_next" }}</a>
+									</li>
+									{{- end }}
+								</ul>
+							</nav>
+						{{- end }}
+				</div>
+			</div>
+			<div class="col-lg-3"> 
+				{{ partial "blog-sidebar.html" . }}
+			</div>
+		</div>
+	</div>
+
+	<!-- regular page -->
+	{{ else -}}
+	{{ .Render "default" }}
+	{{- end }}
+	<!-- /regular page -->
+</section>
+{{ end }}

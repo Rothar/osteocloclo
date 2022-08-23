@@ -1,0 +1,5 @@
+{{ range site.Params.social }} 
+    {{ if not (in .link "#") }}
+    <li {{ if eq ($.Scratch.Get "isFooter") "yes" }} class="list-inline-item" {{ end }}><a href="{{ .link | safeURL }}" aria-label="{{ .aria }}"><i class="fab {{ .icon }}"></i></a></li>
+    {{ end }}
+{{ end }}

@@ -1,0 +1,36 @@
+<head>
+  <meta charset="utf-8">
+  <title>{{ with .Title }}{{ . }}{{ else }}{{ site.Title }}{{ end }}</title>
+
+ 
+  {{ "<!-- Mobile responsive metadata -->" | safeHTML }}
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+  {{ with site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+  
+
+  {{- with site.Params.counter -}}
+  {{ if .enable -}}
+  {{ with .username -}}
+  {{ "<!-- counter.dev analytics -->" | safeHTML }}
+  {{ $counterjs := resources.Get "js/counter.min.js" | resources.ExecuteAsTemplate "js/counter.min.js" . -}}
+  <script src="{{ $counterjs.RelPermalink }}"></script>
+  {{- end }}
+  {{- end }}
+  {{- end }}
+
+  {{ "<!-- Plugins -->" | safeHTML }}
+  {{ range site.Params.plugins.css -}}
+  <link rel="stylesheet" href="{{ .link | relURL }}" {{ .attributes | safeHTMLAttr }}>
+  {{ end }}
+
+  {{ "<!-- Main stylesheet -->" | safeHTML }}
+  {{ $styles := slice (resources.Get "scss/style.scss") (resources.Get "scss/custom.scss") | resources.Concat "scss/bundled.scss" | toCSS | minify -}}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
+
+
+
+  {{ "<!-- Favicon -->" | safeHTML }}
+  {{ partial "favicon.html" . }}
+
+</head>

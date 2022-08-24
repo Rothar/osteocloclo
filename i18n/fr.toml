@@ -27,6 +27,7 @@ tags = "Mots clefs"
 appointment = "Rendez-vous"
 contact = "Contact"
 opening_hours = "Horaires d'ouverture"
+home = "Accueil"
 
 ## Dates
 january = "janvier"

@@ -68,8 +68,6 @@
     </button>
   
     <div class="collapse navbar-collapse" id="navbarLinks">
-
-      <ul class="nav navbar-nav navbar-right">
       <ul class="navbar-nav">
         {{ $currentPage := . -}}
         {{ range site.Menus.main -}}
@@ -88,7 +86,6 @@
         <li class="nav-item{{ if $currentPage.IsMenuCurrent "main" . }} active{{ else if and (in (slice "post" "categories" "tags") $currentPage.Type) (eq .Identifier "blog") }} active {{ end }}"><a href="{{ .URL | relLangURL }}"{{ if $currentPage.IsMenuCurrent "main" . }} class="current nav-link"{{ else if and (in (slice "post" "categories" "tags") $currentPage.Type) (eq .Identifier "blog") }} class="current-parent nav-link" {{ else }} class="nav-link" {{ end }}>{{ .Name }}</a></li>
         {{- end }}
         {{- end }}
-        </ul>
       </ul>
     </div>
   </div>

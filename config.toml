@@ -1,6 +1,7 @@
 baseURL = 'https://www.ostecloclo/'
 languageCode = 'fr-FR'
 defaultContentLanguage = "fr"
+paginate = "5" # Nombre d articles par page dans une vue de type list (ex. : blog)
 
 title = 'Chloé Péquignot | Ostéophatie pour animaux | Bien être animal'
 

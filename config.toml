@@ -52,6 +52,24 @@ icon = "fa-facebook-f"
 link = "http://test"
 aria = "Facebook"
 
+############################## Références externes #############################
+[[params.external]]
+icon = "images/logo/ffoa.png"
+name = "Fédération Française d'Ostéopathie Animale"
+url = "https://www.ffao.fr"
+weight = 1
+
+[[params.external]]
+icon = "images/logo/fnoa.png"
+name = "Fédération Nationale d'Ostéopathie Animale"
+url = "https://www.fnao.fr"
+weight = 2
+
+[[params.external]]
+icon = "images/logo/onv.jpg"
+name = "Ordre National des Vétérinaires"
+url = "https://www.veterinaire.fr/la-profession-veterinaire/nos-grands-dossiers/osteopathie-animale"
+weight = 3
 
 ################################################################################
 [languages]

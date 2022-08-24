@@ -1,0 +1,12 @@
+<div class="footer-bottom">
+    <div class="container clearfix">
+      <div class="copyright-text">
+        <p>&copy; Copyright 2021. Designed &amp; Developed by <a href="https://themefisher.com/">Themefisher</a></p>
+      </div>
+      <ul class="footer-bottom-link">
+        {{ range site.Params.external }}
+        <li style="background-color:white;"><a href="{{ .url | relLangURL }}" target="_blanck" style="background-color:white;"><img class="img-responsive" style="max-height:50px;" src="{{ .icon | relURL }}" title="{{ .name }}" alt="{{ .name }}" aria-label="{{ .name }}"></a></li> 
+        {{ end }}
+      </ul>
+    </div>
+</div>

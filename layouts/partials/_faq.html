@@ -1,0 +1,35 @@
+<section class="appoinment-section section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="accordion-section">
+    <div class="section-title">
+      <h3>{{ i18n "faq" }}</h3>
+    </div>
+    <div class="accordion-holder">
+      <div class="accordion" id="accordionGroup" role="tablist" aria-multiselectable="true">
+        {{ if .Params.faq.enable }}
+        {{ $.Scratch.Set "counter" 0 }}
+        {{ range .Params.faq.faq_item }}
+        {{ if not (eq .question "") }}
+        {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+        <div class="card">
+          <div class="card-header" role="tab" id="heading{{$.Scratch.Get "counter"}}">
+            <h4 class="card-title">
+              <a role="button" data-toggle="collapse" href="#collapse{{$.Scratch.Get "counter"}}" aria-expanded="true" aria-controls="collapse{{$.Scratch.Get "counter"}}">
+                {{ .question }}
+              </a>
+            </h4>
+          </div>
+          <div id="collapse{{$.Scratch.Get "counter"}}" class="collapse show" role="tabpanel" aria-labelledby="heading{{$.Scratch.Get "counter"}}" data-parent="#accordionGroup">
+            <div class="card-body">
+              {{ .reponse }}
+            </div>
+          </div>
+        </div>
+        {{ end }}
+        {{ end }}
+      {{ end }}
+      </div>
+    </div>
+</section>

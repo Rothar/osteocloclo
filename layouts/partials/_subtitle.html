@@ -8,6 +8,7 @@
     <div class="container">
         <div class="title-text breadcrumbs">
             <h1>{{ .Title }}</h1>
+            {{ $part2 := .Title}}
             <ul class="title-menu clearfix">
                 <li>
                     <a href="/index.html" style="font-weight: normal;">{{ i18n "home" }}</a>
@@ -26,7 +27,7 @@
                     {{ if or (in $part "tags") (eq $part "categories") }}
 /&nbsp;&nbsp;</li><li> <a href="/blog"  style="font-weight: normal;">Blog</a>
                     {{ else }}
-/&nbsp;&nbsp;</li><li> <a href="/{{ $.Scratch.Get "url" }}"  style="font-weight: normal;">{{ $part }}</a>   
+/&nbsp;&nbsp;</li><li> <a href="/{{ $.Scratch.Get "url" }}"  style="font-weight: normal;">{{ $part2 }}</a>   
                     {{ end }}
             {{ end }}
         {{ end }}

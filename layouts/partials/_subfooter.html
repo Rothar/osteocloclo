@@ -5,7 +5,7 @@
       </div>
       <ul class="footer-bottom-link">
         {{ range site.Params.external }}
-        <li style="background-color:white;"><a href="{{ .url | relLangURL }}" target="_blanck" style="background-color:white;"><img class="img-responsive" style="max-height:50px;" src="{{ .icon | relURL }}" title="{{ .name }}" alt="{{ .name }}" aria-label="{{ .name }}"></a></li> 
+        <li class="img-external"><a href="{{ .url | relLangURL }}" target="_blanck" class="img-external"><img class="img-responsive img-external" src="{{ .icon | relURL }}" title="{{ .name }}" alt="{{ .name }}" aria-label="{{ .name }}"></a></li> 
         {{ end }}
       </ul>
     </div>

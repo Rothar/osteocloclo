@@ -5,7 +5,7 @@
       <div class="media-left mr-3">
       <a class="pull-left" href="{{ .RelPermalink }}">
         {{ if isset .Params "image" }}
-        <img class="media-object" src="{{ .Params.image | relURL }}" alt="{{ .Title }}" loading="lazy">
+        <img class="media-object around" src="{{ .Params.image | relURL }}" alt="{{ .Title }}" loading="lazy">
         {{ end }}
       </a>
       </div>

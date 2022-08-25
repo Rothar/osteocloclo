@@ -6,6 +6,9 @@ my_story:
                 placeat optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aliquam nesciunt fugit optio
                 illum aut. consectetur adipisicing elit. Neque assumenda, est quam perferendis
                 expedita autem?"
+  img: /images/general/mylittlepony.jpg
+  mission: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam nihil dolorum beatae consequatur mollitiaiure?"
+  vision: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam nihil dolorum beatae consequatur mollitiaiure?"
 
 ###################### FAQ ###########################
 faq:

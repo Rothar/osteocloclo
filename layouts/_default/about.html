@@ -4,19 +4,21 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <img loading="lazy" src="images/services/service-one.jpg" class="responsive" alt="story">
+          <img loading="lazy" src="{{ .Params.my_story.img }}" class="responsive" alt="story">
         </div>
         <div class="col-lg-6">
           <div class="story-content">
             <h2>{{ i18n "my_story" }}</h2>
             <h5 class="tagline">{{ .Params.my_story.first }}</h6>
               <p>{{ .Params.my_story.second }}</p>
+              {{ if not (eq .Params.my_story.mission "") }}
               <h6>{{ i18n "mission" }}</h6>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam nihil dolorum beatae consequatur mollitia
-                iure?</p>
+              <p>{{ .Params.my_story.mission }}</p>
+              {{ end }}
+              {{ if not (eq .Params.my_story.vision "") }}
               <h6>{{ i18n "vision" }}</h6>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda consectetur adipisci, voluptatum
-                dolores nostrum omnis.</p>
+              <p>{{ .Params.my_story.vision }}</p>
+              {{ end }}
           </div>
         </div>
       </div>

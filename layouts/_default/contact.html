@@ -1,3 +1,49 @@
 {{ define "main" }}
+<section class="section contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-5 ">
+                <!-- address start -->
+                <div class="address-block">
+                  <!-- Location -->
+                  <div class="media">
+                    <i class="far fa-map"></i>
+                    <div class="media-body">
+                      <h3>{{ i18n "address_title" }} </h3>
+                      <p>{{ site.Params.contact.address | safeHTML }}</p>
+                    </div>
+                  </div>
+                  <!-- Phone -->
+                  <div class="media">
+                    <i class="fas fa-phone"></i>
+                    <div class="media-body">
+                      <h3>{{ i18n "phone" }}</h3>
+                      <p>
+                        {{ site.Params.contact.phone }}
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Email -->
+                  <div class="media">
+                    <i class="far fa-envelope"></i>
+                    <div class="media-body">
+                      <h3>{{ i18n "email" }}</h3>
+                      <p>
+                        {{ site.Params.contact.email }}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- address end -->
+            </div>
 
+            {{ partial "_contactform.html" . }}
+        </div>
+    </div>
+</section>
+
+<section class="map">
+    <!-- Google Map -->
+    <div id="map"></div>
+</section>
 {{ end }}

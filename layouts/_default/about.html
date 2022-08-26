@@ -23,12 +23,19 @@
         </div>
       </div>
     </div>
-  </section>
+ </section>
 
   {{ partial "_video.html" . }}
   
   {{ partial "_galerie.html" . }}
 
+<section class="appoinment-section section">
+  <div class="container">
+    <div class="row">
   {{ partial "_faq.html" . }}
+  {{ partial "_contactform.html" . }}
+    </div>
+  </div>
+</section>
 
 {{ end }}

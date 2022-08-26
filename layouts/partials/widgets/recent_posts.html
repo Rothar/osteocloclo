@@ -1,5 +1,5 @@
     <ul>
-    {{ range first 4 (where site.Pages "Type" "post") }}
+    {{ range first 2 (where site.Pages "Type" "post") }}
     <li class="item">
       <div class="media">
       <div class="media-left mr-3">
@@ -14,6 +14,9 @@
         <p>{{ .Summary | truncate 50 }}</p>
       </div>
     </div>
-    </li> 
+    </li>
     {{ end }}
   </ul>
+  <div class="link-btn text-center text-lg-center">
+    <a href="/blog" class="btn-style-one">{{ i18n "all_blog" }}</a>
+  </div>

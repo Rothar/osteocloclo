@@ -17,7 +17,9 @@ bgi_title = "images/general/mylittlepony.jpg"
 [params.contact]
 email = "psiolia@gmail.com"
 phone = "+ 33 6 00 00 00 00"
-address = "1 rue cloclosteo<br>25000 Montbéliard"
+address = "1 rue cloclosteo<br>25000 Montbéliard" #9 av Aristide Briand, 25400 Audincourt
+map_latitude = "47.4823625"
+map_longitude = "6.8407664"
 opening = "Lundi - 14h-18h / Mardi - Samedi 09h-18h"
 ############################### Mail form parameters ###########################
 # Whether to use [Netlify Forms](https://docs.netlify.com/forms/setup/)
@@ -162,14 +164,6 @@ attributes = ""
 
 [[params.plugins.js]]
 link = "plugins/fancybox/jquery.fancybox.min.js"
-attributes = "defer"
-
-[[params.plugins.js]]
-link = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"
-attributes = "defer"
-
-[[params.plugins.js]]
-link = "plugins/google-map/gmap.js"
 attributes = "defer"
 
 [[params.plugins.js]]

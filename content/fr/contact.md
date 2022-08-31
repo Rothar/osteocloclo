@@ -1,7 +1,7 @@
 ---
 title: "Contact/RDV"
 draft: false
-layout: "contact"
+layout: "contact" 
 menu:
   main:
     name: "Contact/RDV"

@@ -1,0 +1,25 @@
+<!--=================================
+=            Page Slider            =
+==================================-->
+<div class="hero-slider">
+    {{ range site.Params.slider }} 
+    <!-- Slider Item -->
+    <div class="slider-item slide1" style="background-image:url({{ .img }})">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- Slide Content Start -->
+            <div class="content style text-center">
+              <h2 class="text-white text-bold mb-2" data-animation-in="slideInLeft">{{ .title | safeHTML }}</h2>
+              <p class="tag-text mb-4" data-animation-in="slideInRight">{{ .description | safeHTML }}</p>
+              <a href="{{ .url }}" class="btn btn-main btn-white" data-animation-in="slideInLeft" data-duration-in="1.2">{{ .label }}</a>
+            </div>
+            <!-- Slide Content End -->
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+  
+  <!--====  End of Page Slider  ====-->

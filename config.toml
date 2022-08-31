@@ -29,7 +29,27 @@ use_netlify = true
 ## Ignored if `use_netlify = true` (custom [success page](https://docs.netlify.com/forms/setup/#success-messages) is already included) 
 action = "#"
 
+### page d'accueil : slider ###
+[[params.slider]]
+img = "images/general/mylittlepony.jpg"
+title = "Bienvenue chez Ostecloclo"
+description = "Analyse, conseil, préconisation et contrôle des soins dans le temps"
+url = "/about"
+label = "A propos de moi"
 
+[[params.slider]]
+img = "images/galerie/girleleph.jpg"
+title = "Mes services"
+description = "Le métier d'ostéopathe pour animaux consiste à aider l'animal à retrouver ses fonctions de mobilité."
+url = "/service"
+label = "Explorer"
+
+[[params.slider]]
+img = "images/general/autruche2.jpg"
+title = 'Prenons rendez-vous <i class="far fa-smile"></i>'
+description = ""
+url = "/contact"
+label = "contact"
 
 ################################# Social Media ################################
 [[params.social]]

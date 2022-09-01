@@ -2,9 +2,11 @@
 =            Page Slider            =
 ==================================-->
 <div class="hero-slider">
-    {{ range site.Params.slider }} 
+    {{ $.Scratch.Set "countslide" 0 }}
+    {{ range .Params.slider }} 
+    {{ $.Scratch.Set "countslide" (add ($.Scratch.Get "countslide") 1) }}
     <!-- Slider Item -->
-    <div class="slider-item slide1" style="background-image:url({{ .img }})">
+    <div class="slider-item slide{{$.Scratch.Get "countslide"}}" style="background-image:url('{{ .img }}')">
       <div class="container">
         <div class="row">
           <div class="col-12">

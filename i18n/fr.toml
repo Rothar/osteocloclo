@@ -39,6 +39,10 @@ recent_photos_text = "Un aperçu des interventions les plus récentes. Pour voir
 gallery = "Galerie"
 contact_me = "Contactez-moi"
 all_blog = "Autres articles"
+title = "L'ostéopathie animale"
+emergency = "Contact rapide"
+main_points = "Les points clefs"
+testimonials = "Quelques témoignages"
 
 ## Dates
 january = "janvier"

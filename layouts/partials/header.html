@@ -5,7 +5,11 @@
     <div class="row align-items-center">
       <div class="col-md-6">
         <div class="top-left text-center text-md-left">
-          <h6>{{ i18n "opening_hours" }} : {{ site.Params.contact.opening }}</h6>
+          {{ $label := "" }}
+          {{ range site.Params.opening }}
+            {{ $label = (print $label .day " " .hour " / ") }}
+          {{ end }} 
+          <h6>{{ i18n "opening_hours" }} : {{ $label }}</h6>
         </div>
       </div>
       <div class="col-md-6">

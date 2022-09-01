@@ -13,6 +13,7 @@ description = "Chloé Péquignot | Ostéophatie pour animaux | Bien être animal
 desc_footer = "Analyse, conseil, préconisation et contrôle des soins dans le temps"
 author = "Chloé Péquignot"
 bgi_title = "images/general/mylittlepony.jpg"
+definition = "Prévention et/ou traitement des troubles fonctionnels du corps de l'animal (à l'exclusion des pathologies organiques qui nécessitent une intervention thérapeutique, médicale, chirurgicale, médicamenteuse ou par agents physiques)."
 
 [params.contact]
 email = "psiolia@gmail.com"
@@ -20,7 +21,15 @@ phone = "+ 33 6 00 00 00 00"
 address = "1 rue cloclosteo<br>25000 Montbéliard" #9 av Aristide Briand, 25400 Audincourt
 map_latitude = "47.4823625"
 map_longitude = "6.8407664"
-opening = "Lundi - 14h-18h / Mardi - Samedi 09h-18h"
+
+[[params.opening]]
+day = "Lundi"
+hour = "14h-18h"
+
+[[params.opening]]
+day = "Mardi - Samedi"
+hour = "09h-18h"
+
 ############################### Mail form parameters ###########################
 # Whether to use [Netlify Forms](https://docs.netlify.com/forms/setup/)
 use_netlify = true
@@ -28,28 +37,6 @@ use_netlify = true
 ## Fill in your Form ID URL for Formspree.io, e.g. `https://formspree.io/f/{form_id}`
 ## Ignored if `use_netlify = true` (custom [success page](https://docs.netlify.com/forms/setup/#success-messages) is already included) 
 action = "#"
-
-### page d'accueil : slider ###
-[[params.slider]]
-img = "images/general/mylittlepony.jpg"
-title = "Bienvenue chez Ostecloclo"
-description = "Analyse, conseil, préconisation et contrôle des soins dans le temps"
-url = "/about"
-label = "A propos de moi"
-
-[[params.slider]]
-img = "images/galerie/girleleph.jpg"
-title = "Mes services"
-description = "Le métier d'ostéopathe pour animaux consiste à aider l'animal à retrouver ses fonctions de mobilité."
-url = "/service"
-label = "Explorer"
-
-[[params.slider]]
-img = "images/general/autruche2.jpg"
-title = 'Prenons rendez-vous <i class="far fa-smile"></i>'
-description = ""
-url = "/contact"
-label = "contact"
 
 ################################# Social Media ################################
 [[params.social]]

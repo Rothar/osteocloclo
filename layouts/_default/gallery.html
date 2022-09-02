@@ -1,6 +1,4 @@
 {{ define "main" }}
-
-{{ .Scratch.Set "isGallery" "yes" }}
-{{ partial "_galerie.html" . }}
-
+    {{ .Scratch.Set "isGallery" "yes" }}
+    {{ partial "_galerie.html" . }}
 {{ end }}

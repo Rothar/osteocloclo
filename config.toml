@@ -21,6 +21,13 @@ phone = "+ 33 6 00 00 00 00"
 address = "1 rue cloclosteo<br>25000 Montbéliard" #9 av Aristide Briand, 25400 Audincourt
 map_latitude = "47.4823625"
 map_longitude = "6.8407664"
+############################### Mail form parameters ###########################
+# Whether to use [Netlify Forms](https://docs.netlify.com/forms/setup/)
+use_netlify = true
+# Form action
+## Fill in your Form ID URL for Formspree.io, e.g. `https://formspree.io/f/{form_id}`
+## Ignored if `use_netlify = true` (custom [success page](https://docs.netlify.com/forms/setup/#success-messages) is already included) 
+action = "#"
 
 [[params.opening]]
 day = "Lundi"
@@ -29,14 +36,6 @@ hour = "14h-18h"
 [[params.opening]]
 day = "Mardi - Samedi"
 hour = "09h-18h"
-
-############################### Mail form parameters ###########################
-# Whether to use [Netlify Forms](https://docs.netlify.com/forms/setup/)
-use_netlify = true
-# Form action
-## Fill in your Form ID URL for Formspree.io, e.g. `https://formspree.io/f/{form_id}`
-## Ignored if `use_netlify = true` (custom [success page](https://docs.netlify.com/forms/setup/#success-messages) is already included) 
-action = "#"
 
 ################################# Social Media ################################
 [[params.social]]

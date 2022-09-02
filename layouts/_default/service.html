@@ -1,3 +1,70 @@
 {{ define "main" }}
 
+{{ $.Scratch.Set "cpt" 1 }}
+
+<br><br>
+{{ range .Params.services }} 
+{{ $.Scratch.Set "cpt" (add ($.Scratch.Get "cpt") 1) }}
+    {{ if (modBool ($.Scratch.Get "cpt") 2) }}
+            
+    <section class="section pt-2">
+    <div class="container service-box">   
+      <div class="row">   
+        <div class="col-lg-6">
+          <div class="contents">
+            <div class="section-title">
+              <h3>{{ .title }}</h3>
+            </div>
+            <div class="text">
+              {{ .text | safeHTML }}
+            </div>
+            {{ if isset . "list" }}
+            <ul class="content-list">
+                {{ range .list }}
+              <li>
+                <i class="far fa-check-circle"></i>{{ . }}</li>
+              {{ end }}
+            </ul>
+           {{ end }}
+          </div>
+        </div>
+        <div class="col-lg-6">
+            <img loading="lazy" class="img-fluid" src="{{ .image }}" alt="service-image">
+          </div>
+      </div>
+    </div>
+    </section>
+    {{ else }}
+    <section class="section pt-2">
+        <div class="container service-box">
+            {{ $.Scratch.Set "cpt" 0 }}
+          <div class="row">
+            <div class="col-lg-6">
+                <img loading="lazy" class="img-fluid" src="{{ .image }}" alt="service-image">
+              </div>
+            <div class="col-lg-6">
+              <div class="contents">
+                <div class="section-title">
+                    <h3>{{ .title }}</h3>
+                  </div>
+                <div class="text">
+                    {{ .text | safeHTML }}
+                </div>
+                {{ if isset . "list" }}
+                <ul class="content-list">
+                    {{ range .list }}
+                  <li>
+                    <i class="far fa-check-circle"></i>{{ . }}</li>
+                  {{ end }}
+                </ul>
+               {{ end }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    {{ end }}
+{{ end }}
+  
+
 {{ end }}

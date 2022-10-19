@@ -16,9 +16,9 @@ bgi_title = "images/general/mylittlepony.jpg"
 definition = "Prévention et/ou traitement des troubles fonctionnels du corps de l'animal (à l'exclusion des pathologies organiques qui nécessitent une intervention thérapeutique, médicale, chirurgicale, médicamenteuse ou par agents physiques)."
 
 [params.contact]
-email = "psiolia@gmail.com"
-phone = "+ 33 6 00 00 00 00"
-address = "1 rue cloclosteo<br>25000 Montbéliard" #9 av Aristide Briand, 25400 Audincourt
+email = "chloe.osteo.animalier@gmail.com"
+phone = "+ 33 7 66 77 97 07"
+address = "Audincourt - Déplacement à domicile uniquement" #9 av Aristide Briand, 25400 Audincourt Je vais mettre juste la ville, sinon on va sonner chez moi
 map_latitude = "47.4823625"
 map_longitude = "6.8407664"
 ############################### Mail form parameters ###########################
@@ -30,12 +30,12 @@ use_netlify = true
 action = "#"
 
 [[params.opening]]
-day = "Lundi"
-hour = "14h-18h"
+day = "Mardi - Vendredi"
+hour = "10h-19h"
 
-[[params.opening]]
-day = "Mardi - Samedi"
-hour = "09h-18h"
+#[[params.opening]]
+#day = "Mardi - Samedi"
+#hour = "09h-18h"
 
 ################################# Social Media ################################
 [[params.social]]
@@ -43,29 +43,29 @@ icon = "fa-google-plus-g"
 link = "#"
 aria = "Google plus"
 
-[[params.social]]
-icon = "fa-linkedin" 
-link = "#"
-aria = "LinkedIn"
+#[[params.social]]
+#icon = "fa-linkedin" 
+#link = "#"
+#aria = "LinkedIn"
 
-[[params.social]]
-icon = "fa-pinterest" 
-link = "#"
-aria = "Pinterest"
+#[[params.social]]
+#icon = "fa-pinterest" 
+#link = "#"
+#aria = "Pinterest"
 
-[[params.social]]
-icon = "fa-instagram" 
-link = "http://test2"
-aria = "Instagram"
+#[[params.social]]
+#icon = "fa-instagram" 
+#link = "http://test2"
+#aria = "Instagram"
 
-[[params.social]]
-icon = "fa-twitter" 
-link = "#"
-aria = "Twitter"
+#[[params.social]]
+#icon = "fa-twitter" 
+#link = "#"
+#aria = "Twitter"
 
 [[params.social]]
 icon = "fa-facebook-f" 
-link = "http://test"
+link = "https://www.facebook.com/profile.php?id=100086706158647"
 aria = "Facebook"
 
 ############################## Références externes #############################

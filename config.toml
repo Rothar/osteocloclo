@@ -29,7 +29,7 @@ use_netlify = true
 ## Ignored if `use_netlify = true` (custom [success page](https://docs.netlify.com/forms/setup/#success-messages) is already included) 
 action = "#"
 
-[params.opening]
+[[params.opening]]
 day = "Mardi - Vendredi"
 hour = "10h-18h"
 

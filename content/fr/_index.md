@@ -1,6 +1,6 @@
 ---
 slider:
-  - img: "images/general/mylittlepony.jpg"
+  - img: "images/general/odin-moi.jpeg"
     title: "Bienvenue chez Osteocloclo"
     description: "Analyse, conseil, préconisation et contrôle des soins dans le temps"
     url: "/about"

@@ -5,5 +5,5 @@ layout: "contact"
 menu:
   main:
     name: "Contact/RDV"
-    weight: 6
+    weight: 7
 ---

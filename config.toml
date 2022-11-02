@@ -96,7 +96,7 @@ weight = 3
 
 [[languages.fr.menu.main]]
 hasChildren = true
-weight = 5
+weight = 6
 name = "Plus"
 
 [sitemap]

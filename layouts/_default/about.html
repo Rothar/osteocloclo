@@ -9,15 +9,15 @@
         <div class="col-lg-6">
           <div class="story-content">
             <h2>{{ i18n "my_story" }}</h2>
-            <h5 class="tagline">{{ .Params.my_story.first }}</h6>
-              <p>{{ .Params.my_story.second }}</p>
+            <h5 class="tagline">{{ .Params.my_story.first | safeHTML }}</h6>
+              <p>{{ .Params.my_story.second | safeHTML }}</p>
               {{ if not (eq .Params.my_story.mission "") }}
               <h6>{{ i18n "mission" }}</h6>
-              <p>{{ .Params.my_story.mission }}</p>
+              <p>{{ .Params.my_story.mission | safeHTML }}</p>
               {{ end }}
               {{ if not (eq .Params.my_story.vision "") }}
               <h6>{{ i18n "vision" }}</h6>
-              <p>{{ .Params.my_story.vision }}</p>
+              <p>{{ .Params.my_story.vision | safeHTML }}</p>
               {{ end }}
           </div>
         </div>

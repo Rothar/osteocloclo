@@ -32,8 +32,8 @@ faq = "F.A.Q."
 
 ## other
 my_story = "Mon histoire"
-vision = "Vision"
-mission = "Mission"
+vision = "Techniques"
+mission = "Espèces"
 recent_photos = "Les dernières photos"
 recent_photos_text = "Un aperçu des interventions les plus récentes. Pour voir toutes les photos, allez faire un tour sur [la galerie](/gallery)."
 gallery = "Galerie"

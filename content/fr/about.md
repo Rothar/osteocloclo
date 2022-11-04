@@ -15,8 +15,6 @@ my_story:
 faq:
   enable: true
   faq_item:
-    - question: "L'ostéopathie animale, c'est quoi ?"
-      reponse: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam nihil dolorum beatae consequatur mollitia"
     - question: "Quand doit on faire une consultation ?"
       reponse: "Une consultation par an est conseillé afin de prévenir de troubles pouvant s'installer dans le temps. <br> Lors d'un changement comportemental de l'animal : refuse de monter dans la voiture, passe moins de temps sur le canapé, est moins anthousiaste à l'idée d'aller en balade... <br> Après une opération, afin de permettre l'installation d'un nouveau schéma fonctionnel et de limiter les adhérences dû à la cicatrisation. <br>Lors de la croissance de l'animal afin d'optimiser le développement. <br> Lors du vieillissement afin de ralentir au mieux le vieillissement physiologique."
     - question: ""
@@ -24,7 +22,7 @@ faq:
 
 ###################### Vidéo #########################
 video: 
-  enable: true
+  enable: false
   url: "https://www.youtube.com/watch?v=MSjOr_S_peg"
   titre: "Osthéopathe pour animaux"
   soustitre: "Un reportage par France 3 en région Normandie"

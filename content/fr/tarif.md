@@ -14,7 +14,7 @@ tarif:
       - "Zone de 36 à 50 km : 10€"
       - "Zone de 51 à 80 km : 15€"
       - "Zone > 80 km : au cas par cas"
-img: /images/general/mylittlepony.jpg
+img: /images/general/odin-jeune.jpeg
 
 
 ######################################################

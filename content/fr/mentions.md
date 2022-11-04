@@ -2,7 +2,7 @@
 title: "Mentions Légales"
 draft: false
 layout: "mentions"
-bgi_title: "images/general/girleleph.jpg"
+bgi_title: "images/general/Willow-floki.jpeg"
 menu:
   main:
     parent: "Plus"

@@ -6,13 +6,13 @@ slider:
     url: "/about"
     label: "A propos de moi"
 
-  - img: "images/general/girleleph.jpg"
+  - img: "images/general/vache manipulation.JPG"
     title: "Mes services"
     description: "Le métier d'ostéopathe pour animaux consiste à aider l'animal à retrouver ses fonctions de mobilité."
     url: "/service"
     label: "Explorer"
 
-  - img: "images/general/autruche2.jpg"
+  - img: "images/general/odin mouvement.jpeg"
     title: 'Prenons rendez-vous <i class="far fa-smile"></i>'
     description: ""
     url: "/contact"

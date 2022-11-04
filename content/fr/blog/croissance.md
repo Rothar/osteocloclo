@@ -10,6 +10,6 @@ categories: []
 tags: ["croissance", "jeune"]
 ---
 
-## Croissance
+## 
 
-En pleine croissance, ils sont tout fou, pateau. C'est amusant à voir et c'est tout à fait normal. Mais ça peut également être la cause de petites dysfonctions qui peuvent impacter la croissance.
+En pleine croissance, ils sont foufous, patauds ... C'est amusant à voir et c'est tout à fait normal. Mais ces manifestations peuvent parfois être à l'origine de dysfonctions qui impactent la croissance.

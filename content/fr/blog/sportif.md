@@ -10,6 +10,6 @@ categories: []
 tags: ["sport", "compétition", "activité", "suivi"]
 ---
 
-## Activités Sportives
+## 
 
-Comme les sportifs humains, les animaux de compétition ont besoin d'un suivi régulier afin de garder sa performance.
+Comme les sportifs humains, les animaux de compétition ont besoin d'un suivi régulier afin de maintenir ou améliorer leurs performances.

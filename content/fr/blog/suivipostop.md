@@ -10,6 +10,6 @@ categories: []
 tags: ["opération", "suivi", "stérilisation"]
 ---
 
-## Suivi post-opératoire
+## 
 
-Après une opération, le corps met en place des adaptations afin de trouver un nouveau schéma fonctionnel afin de continuer à fonctionner. Ces adaptations sont normales mais il faut faire un suivi afin de permettre à l'animal de retrouver un schéma global lui permettant d'utiliser son corps dans sa globalité.
+Après une opération, le corps met en place des adaptations afin de trouver un nouveau schéma fonctionnel qui permet de continuer à fonctionner. Ces adaptations sont inévitables mais un suivi ostéopathique accompagne l'animal dans sa recherche d'un nouvel équilibre.

@@ -7,15 +7,16 @@ menu:
     name: "Services"
     weight: 3
 services:
-  title : "Déroulement d'une consultation ostéopathique"
-  text: "Une consultation ostéopathie consiste à rechercher les dysfonctions de l'animal. Une dysfoncion est une dysharmonie au niveau d'une articulation, d'un muscle ou d'un viscère. <br><br>
-Une consultation se passe en plusieurs étapes : <br><br>
-- une observation générale : un examen visuel complet, un examen palpatoire, et un 'interrogatoire' sur les antécédents et motif de consultation afin de recruter le maximum d'information. <br><br>
-- une observation dynamique afin de voir comment fonctionne l'animal à cet instant. <br><br>
-- un testing global de toutes les articulations, muscles et viscères. <br><br>
-- une analyse de tous les phénomènes recrutés lors des phases précédentes afin de créer une chaîne dysfonctionnelle permettant de comprendre les liens de cause à effet de toutes les dysfonctions présentent. <br><br>
-- la phase de normalisation des dysfonctions nécessaires présentent. En effet en fonction de l'histoire de l'animal, certaines sont nécessaires au bon fonctionnement de l'animal. <br><br>
-- un nouvel examen dynamique permet de voir les changements réalisés et d'aprécier son nouveau schéma fonctionnel. <br><br>
-- un suivi ou une deuxieme consultation peut être nécessaire."
+  title : "Déroulement de la consultation ostéopathique"
+  text: "La consultation d'ostéopathie vise à rechercher les dysfonctions de l'animal. Une dysfonction est une dysharmonie au niveau d'une articulation, d'un muscle ou d'un viscère. <br><br>
+La consultation se passe en plusieurs étapes : <br>
+- interrogatoire sur les antécédents et motifs de consultation afin de recruter le maximum d'informations<br>
+- observation générale : examen visuel complet et palpation <br>
+- observation dynamique afin d'apprécier comment bouge et fonctionne l'animal à cet instant <br>
+- testing global de toutes les articulations, muscles et viscères <br>
+- analyse de tous les phénomènes recrutés lors des phases précédentes. Ceci permet de créer une 'chaîne dysfonctionnelle' afin de comprendre les liens de cause à effet de toutes les dysfonctions présentes <br>
+- phase de normalisation des dysfonctions nécessaires présentes : en fonction de l'histoire de l'animal, certaines dysfonctions peuvent être nécessaires à son bon fonctionnement <br> 
+- nouvel examen dynamique qui permet de voir les changements réalisés et d'apprécier le nouveau schéma fonctionnel de l'animal <br><br>
+Un suivi ou une deuxieme consultation peuvent être nécessaires."
   image: "/images/general/odin-mouvement-min.jpeg"
 ---

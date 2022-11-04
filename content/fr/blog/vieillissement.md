@@ -10,6 +10,6 @@ categories: []
 tags: ["vieillissement", "vieux", "âgé"]
 ---
 
-## Vieillissement
+## 
 
-Le vieillissement agit sur tout le corps, un suivi permet d'assurer un vieillissement optimal des structures articulaires, mais également physiologique et métabolique.
+Le vieillissement agit sur tout le corps mais un suivi permet de minimiser son retentissement sur les structures articulaires, physiologiques et métaboliques.

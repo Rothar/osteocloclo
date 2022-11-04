@@ -10,7 +10,7 @@ title = 'Chloé Pequignot | OA 1176 | Ostéopathe animalière'
 [params]
 logo = "favicon-96x96.png"
 description = "Chloé Pequignot | OA 1176 | Ostéopathe animalière"
-desc_footer = "Analyse, conseil, préconisation et contrôle des soins dans le temps"
+desc_footer = "Ostéopathe animalière"
 author = "Chloé Pequignot | OA 1176"
 bgi_title = "images/general/odin-moi.jpeg"
 definition = "Prévention et/ou traitement des troubles fonctionnels du corps de l'animal (à l'exclusion des pathologies organiques qui nécessitent une intervention thérapeutique, médicale, chirurgicale, médicamenteuse ou par agents physiques)."
@@ -30,7 +30,7 @@ use_netlify = true
 action = "#"
 
 [[params.opening]]
-day = "Mardi - Vendredi"
+day = "Du Mardi au Vendredi"
 hour = "10h-18h"
 
 #[[params.opening]]

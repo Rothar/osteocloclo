@@ -9,6 +9,10 @@
 			  <p>{{ site.Params.desc_footer }}</p>
 			  <ul class="location-link">
 				<li class="item">
+					<i class="fas fa-user"></i>
+					<p>{{ site.Params.author | safeHTML }}</p>
+				  </li>
+				<li class="item">
 				  <i class="fas fa-map-marker-alt"></i>
 				  <p>{{ site.Params.contact.address | safeHTML }}</p>
 				</li>

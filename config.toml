@@ -3,15 +3,15 @@ languageCode = 'fr-FR'
 defaultContentLanguage = "fr"
 paginate = "5" # Nombre d articles par page dans une vue de type list (ex. : blog)
 
-title = 'Chloé Péquignot | Ostéopathe animalière'
+title = 'Chloé Pequignot | OA 1176 | Ostéopathe animalière'
 
 
 ################################# Default parameters ##########################
 [params]
 logo = "favicon-96x96.png"
-description = "Chloé Péquignot | Ostéopathe animalière"
+description = "Chloé Pequignot | OA 1176 | Ostéopathe animalière"
 desc_footer = "Analyse, conseil, préconisation et contrôle des soins dans le temps"
-author = "Chloé Péquignot"
+author = "Chloé Pequignot | OA 1176"
 bgi_title = "images/general/odin-moi.jpeg"
 definition = "Prévention et/ou traitement des troubles fonctionnels du corps de l'animal (à l'exclusion des pathologies organiques qui nécessitent une intervention thérapeutique, médicale, chirurgicale, médicamenteuse ou par agents physiques)."
 

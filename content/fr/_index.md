@@ -1,7 +1,7 @@
 ---
 slider:
   - img: "images/general/odin-moi.jpeg"
-    title: "Bienvenue chez Osteocloclo"
+    title: "Bienvenue chez OsteoChloé - OA 1176"
     description: "Analyse, conseil, préconisation et contrôle des soins dans le temps"
     url: "/about"
     label: "A propos de moi"

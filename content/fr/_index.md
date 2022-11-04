@@ -2,7 +2,7 @@
 slider:
   - img: "images/general/odin-moi.jpeg"
     title: "Bienvenue chez OsteoChloé - OA 1176"
-    description: "Analyse, conseil, préconisation et contrôle des soins dans le temps"
+    description: "Ostéopathe animalière"
     url: "/about"
     label: "Présentation"
 

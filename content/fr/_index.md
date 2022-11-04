@@ -8,7 +8,7 @@ slider:
 
   - img: "images/general/vache manipulation.JPG"
     title: "Services"
-    description: "Le métier d'ostéopathe pour animaux consiste à aider l'animal à retrouver ses fonctions de mobilité."
+    description: "Le métier d'ostéopathe pour animaux consiste à aider l'animal à (re)trouver un nouvel équilibre harmonieux."
     url: "/service"
     label: "Explorer"
 

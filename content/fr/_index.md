@@ -33,6 +33,7 @@ menu:
     name: "Accueil"
     weight: 1
 ################### section des temoignages ###################
+testimonial_enable: false
 testimonials:
   - name: "David Vincent"
     text: "Je les ai vus"

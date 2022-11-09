@@ -144,6 +144,10 @@ link = "plugins/jquery-ui/jquery-ui.css"
 attributes = ""
 
 [[params.plugins.css]]
+link = "plugins/leaflet/leaflet.css"
+attributes = "crossorigin=''"
+
+[[params.plugins.css]]
 link = "plugins/timePicker/timePicker.css"
 attributes = ""
 

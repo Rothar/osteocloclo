@@ -1,89 +1,47 @@
 <section class="map">
+    <script src="/plugins/leaflet/leaflet.js" crossorigin=""></script>
     <div> 
         <div id="mapdiv" class="smallmap"></div>
-        <script  src="https://openlayers.org/api/2.13.1/OpenLayers.js"></script>
         <script>
-              
-              map = new OpenLayers.Map("mapdiv");
-              map.addLayer(new OpenLayers.Layer.OSM());
+            var myLat = {{ site.Params.contact.map_latitude }};
+            var myLng = {{ site.Params.contact.map_longitude }};
+            var map = L.map('mapdiv').setView([myLat,myLng], 10);
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 18,
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(map);
+            L.control.scale().addTo(map);
+            var marker = L.marker([myLat, myLng]).addTo(map);
+            marker.bindPopup("Bonjour,<br>Pour consulter les tarifs en fonction du périmètre d'action, <a href='/tarif'>cliquez ici</a> svp.").openPopup();
 
-              var lonLat = new OpenLayers.LonLat( {{ site.Params.contact.map_longitude }} ,{{ site.Params.contact.map_latitude }}  )
-                  .transform(
-                      new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
-                      map.getProjectionObject() // to Spherical Mercator Projection
-                  );
+            var circle = L.circle([myLat, myLng], {
+                color: 'navy',
+                fillColor: '#1a6edb',
+                fillOpacity: 0.3,
+                radius: 20000
+            }).addTo(map);
 
-                                
-              var zoom=16;
-              var markers = new OpenLayers.Layer.Markers( "Markers" );
-              
-              
-              markers.addMarker(new OpenLayers.Marker(lonLat));  
-              map.addLayer(markers);      
-              
-              map.setCenter (lonLat, zoom);         
-              
-              var features = [];
-var circle = new ol.geom.Circle([-1500, 0], 1000);
-features.push(new ol.Feature({
-    geometry: circle
-}));
-var vectorSource = new ol.source.Vector({
-    features: features
-});
-var layer = new ol.layer.Vector({
-    source: vectorSource,
-    style: [
-    new ol.style.Style({
-        stroke: new ol.style.Stroke({
-            color: 'blue',
-            width: 3
-        }),
-        fill: new ol.style.Fill({
-            color: 'rgba(0, 0, 255, 0.1)'
-        })
-    })]
-});
+            L.circle([myLat, myLng], {
+                color: 'navy',
+                fillColor: '#1a6edb',
+                fillOpacity: 0.1,
+                radius: 35000
+            }).addTo(map);
 
-/* Example of a low poly circle */
-var features2 = [];
-var circle2 = new ol.geom.Circle([1500, 0], 1000);
-var lowpoly = ol.geom.Polygon.circular(
-    /* WGS84 Sphere */
-    new ol.Sphere(6378137),
-    circle2.getCenter(),
-    circle2.getRadius(),
-    /* Number of verticies */
-    64);
-features2.push(new ol.Feature({ geometry: lowpoly }));
-var vectorSource2 = new ol.source.Vector({
-    features: features2
-});
-var layer2 = new ol.layer.Vector({
-    source: vectorSource2,
-    style: [
-    new ol.style.Style({
-        stroke: new ol.style.Stroke({
-            color: 'red',
-            width: 3
-        }),
-        fill: new ol.style.Fill({
-            color: 'rgba(255, 0, 0, 0.1)'
-        })
-    })]
-});
+            L.circle([myLat, myLng], {
+                color: 'navy',
+                fillColor: '#1a6edb',
+                fillOpacity: 0.1,
+                radius: 50000
+            }).addTo(map);
 
-map.addLayer(layer);
-map.addLayer(layer2);
+            L.circle([myLat, myLng], {
+                color: 'navy',
+                fillColor: '#1a6edb',
+                fillOpacity: 0.1,
+                radius: 80000
+            }).addTo(map);
 
-/*var map = new ol.Map({
-    layers: [layer, layer2],
-    target: 'mapdiv',
-    view: new ol.View({
-        center: [0, 0],
-        zoom: 14
-    })
-}); */
         </script>
   </div>
 </section>

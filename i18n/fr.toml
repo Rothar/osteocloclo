@@ -46,6 +46,9 @@ main_points = "Les points clefs"
 testimonials = "Quelques témoignages"
 souvenirs = "Quelques souvenirs"
 tarif = "Tarifs"
+consult = "Prix consultation"
+cost = "Frais de déplacement"
+legende_map = "Zones de déplacement"
 
 ## Dates
 january = "janvier"

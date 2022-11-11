@@ -1,26 +1,54 @@
 <div class="demo10">
     <div class="container">
-        {{ range .Params.tarif }}
-        <h3 class="tarif">{{ .title }}</h3>
+       
+        <h3 class="tarif">{{ i18n "consult" }}</h3>
         <div class="row">
-            {{ range .data }}
+            {{ range .Params.consultation }}
             <div class="col-md-2 col-sm-6">
                 <div class="pricingTable10">
                     
                     <div class="pricing-content">
                         <ul><!-- html dedie au design --></ul>
                     </div>
-                    <div class="pricingTable-header">
+                    {{ if .url }}<a href="{{ .url }}" target="blanck">{{ end }}
+                    <div class="pricingTable-header" {{ if .bckg }}style="background-image:url('{{ .bckg }}')" {{ end }}>
                         <h3 class="heading">{{ .label }}</h3>
                         <span class="price-value">
                             {{ .price }}
                         </span>
                     </div>
-                    
+                    {{ if .url }}</a>{{ end }}
                 </div>
             </div>
             {{ end }}
         </div>
-        {{ end }}  
+          
+        <h3 class="tarif">{{ i18n "cost" }}</h3>
+        <div class="row cost">
+            <div class="col-lg-6">
+                {{ range .Params.cost }}
+                <div class="margin10">
+                    <div class="pricingTable10">
+                        <div class="pricing-content">
+                            <ul><!-- html dedie au design --></ul>
+                        </div>
+                        <div class="pricingTable-header">
+                            <h3 class="heading">{{ .label }}</h3>
+                            <span class="price-value">
+                                {{ .price }}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+             
+            <div class="col-lg-6">
+                <figure>
+                <img loading="lazy" class="img-fluid" src="/images/tarif/map.png" alt='{{ i18n "legende_map"}}'>
+                <figcaption>{{ i18n "legende_map"}}</figcaption>
+                </figure>
+            </div>
+        </div>
     </div>
 </div>

@@ -17,6 +17,6 @@ La consultation se passe en plusieurs étapes : <br>
 - analyse de tous les phénomènes recrutés lors des phases précédentes. Ceci permet de créer une 'chaîne dysfonctionnelle' afin de comprendre les liens de cause à effet de toutes les dysfonctions présentes <br>
 - phase de normalisation des dysfonctions nécessaires présentes : en fonction de l'histoire de l'animal, certaines dysfonctions peuvent être nécessaires à son bon fonctionnement <br> 
 - nouvel examen dynamique qui permet de voir les changements réalisés et d'apprécier le nouveau schéma fonctionnel de l'animal <br><br>
-Un suivi ou une deuxieme consultation peuvent être nécessaires."
+Un suivi ou une deuxième consultation peuvent être nécessaires."
   image: "/images/general/odin-mouvement-min.jpeg"
 ---

@@ -12,4 +12,4 @@ tags: ["mouvement", "balade","activité"]
 
 ## 
 
-Les articulations, les muscles, l'appareil digestif, ... ont besoin de mouvement. En effet le peristaltisme des intestins est stimulé par les mouvement du ventre lors de la marche. Les déchets articulaires sont éliminés par les mouvements de pression exercés lors de la marche. Pour certains animaux, les pieds font office de coeur secondaire qui aident le retour veineux et la circulation du sang artériel.
+Les articulations, les muscles, l'appareil digestif, ... ont besoin de mouvements. En effet le peristaltisme des intestins est stimulé par les mouvement du ventre lors de la marche. Les déchets articulaires sont éliminés par les mouvements de pression exercés lors de la marche. Pour certains animaux, les pieds font office de coeur secondaire qui aident le retour veineux et la circulation du sang artériel.

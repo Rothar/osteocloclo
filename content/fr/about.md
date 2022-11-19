@@ -15,7 +15,7 @@ my_story:
 faq:
   enable: true
   faq_item:
-    - question: "Quand est il utile de me consulter ?"
+    - question: "Quand est-il utile de me consulter ?"
       reponse: " - une fois par an afin de prévenir les troubles susceptibles de s'installer dans le temps. <br> - lors d'un changement comportemental de l'animal : refus de monter ou descendre de la voiture, du canapé, manque d'enthousiasme pour la balade, réaction au brossage et/ou sanglage, baisse de performance, difficulté à prendre en insémination artificielle ... <br> - après une opération, afin de permettre l'installation d'un nouveau schéma fonctionnel et de limiter les adhérences dûes à la cicatrisation. <br>- pendant la croissance afin d'optimiser le développement. <br> - lors du vieillissement afin de ralentir au mieux le vieillissement physiologique."
     - question: ""
       reponse: ""

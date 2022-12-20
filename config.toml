@@ -30,12 +30,12 @@ use_netlify = true
 action = "#"
 
 [[params.opening]]
-day = "Du Mardi au Vendredi"
-hour = "10h-18h"
+day = "Mardi"
+hour = "12h-18h"
 
-#[[params.opening]]
-#day = "Mardi - Samedi"
-#hour = "09h-18h"
+[[params.opening]]
+day = "Mercredi au Vendredi"
+hour = "10h-18h"
 
 ################################# Social Media ################################
 [[params.social]]

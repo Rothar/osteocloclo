@@ -33,15 +33,15 @@ menu:
     name: "Accueil"
     weight: 1
 ################### section des temoignages ###################
-testimonial_enable: false
+testimonial_enable: true
 testimonials:
-  - name: "David Vincent"
-    text: "Je les ai vus"
-    image: "/images/testimonial/1.png"
-  - name: "test test"
-    text: "texte 2"
+  - name: "JC"
+    text: "Lacko va bien, il ne boit plus et sa démarche est plus fluide. Merci beaucoup pour le travail que vous avez fait, qui s'avère efficace."
     image: ""
-  - name: "test3 test3"
-    text: "texte 23"
-    image: ""
+  #- name: "test test"
+  #  text: "texte 2"
+  #  image: ""
+  #- name: "test3 test3"
+  #  text: "texte 23"
+  #  image: ""
 ---

@@ -15,7 +15,7 @@ En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance
 
 Propriétaire du site : Chloé Pequignot - Contact : chloe.osteo.animalier@gmail.com +33 7 66 77 97 07 - Adresse : 9 avenue aristide Briand 25400 Audincourt.
 
-Identification de l'entreprise : Chloé Pequignot au capital social de 1000€ - SIREN : 920 246 444 - RCS ou RM : 45fdsgf dgfds - Adresse postale : 9 avenue aristide Briand 25400 Audincourt
+Identification de l'entreprise : Chloé Pequignot au capital social de 1000€ - SIREN : 920 246 444 - Adresse postale : 9 avenue aristide Briand 25400 Audincourt
 
 Directeur de la publication : - Contact : .
 

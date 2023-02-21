@@ -53,10 +53,10 @@ aria = "Google plus"
 #link = "#"
 #aria = "Pinterest"
 
-#[[params.social]]
-#icon = "fa-instagram" 
-#link = "http://test2"
-#aria = "Instagram"
+[[params.social]]
+icon = "fa-instagram" 
+link = "https://instagram.com/pequignot_osteoanimalier"
+aria = "Instagram"
 
 #[[params.social]]
 #icon = "fa-twitter" 

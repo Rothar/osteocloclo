@@ -1,11 +1,17 @@
 ---
 slider:
+  - img: "images/evenement/nilufar logo pour site.png"
+    title: "Consultation à Nilufar Bessoncourt le 4 mars"
+    description: "Journée de consultation pour les chiens, chats, NACs"
+    url: "/contact"
+    label: "Prendre RDV"
+
   - img: "images/general/odin-moi.jpeg"
     title: "Bienvenue chez OsteoChloé - OA 1176"
     description: "Ostéopathe animalière"
     url: "/about"
     label: "Présentation"
-
+  
   - img: "images/general/vache manipulation.JPG"
     title: "Services"
     description: "Le métier d'ostéopathe pour animaux consiste à aider l'animal à (re)trouver un nouvel équilibre harmonieux."

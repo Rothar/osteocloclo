@@ -36,7 +36,7 @@ menu:
 testimonial_enable: true
 testimonials:
   - name: "JC"
-    text: "Lacko va bien, il ne boit plus et sa démarche est plus fluide. Merci beaucoup pour le travail que vous avez fait, qui s'avère efficace."
+    text: "Lacko va bien, il ne boite plus et sa démarche est plus fluide. Merci beaucoup pour le travail que vous avez fait, qui s'avère efficace."
     image: ""
   #- name: "test test"
   #  text: "texte 2"

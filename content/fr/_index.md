@@ -1,10 +1,10 @@
 ---
 slider:
-  - img: "images/evenement/nilufar logo pour site.png"
-    title: "Consultation à Nilufar Bessoncourt le 4 mars"
-    description: "Journée de consultation pour les chiens, chats, NACs"
-    url: "/contact"
-    label: "Prendre RDV"
+  #- img: "images/evenement/nilufar logo pour site.png"
+  #  title: "Consultation à Nilufar Bessoncourt le 4 mars"
+  #  description: "Journée de consultation pour les chiens, chats, NACs"
+  #  url: "/contact"
+  #  label: "Prendre RDV"
 
   - img: "images/general/odin-moi.jpeg"
     title: "Bienvenue chez OsteoChloé - OA 1176"

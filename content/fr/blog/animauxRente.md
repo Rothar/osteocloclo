@@ -1,5 +1,5 @@
 ---
-title: "Animaux de Rente"
+title: "Animaux d'élevage"
 Author: 
 date: 2023-01-23T11:07:10+06:00
 draft: false
@@ -7,12 +7,12 @@ bgi_title : "images/general/vache manipulation.JPG"
 image: "images/general/vache manipulation.JPG"
 type: "post"
 categories: []
-tags: ["rente", "troupeau", "cheptel", "suivi"]
+tags: ["rente", "élevage", "troupeau", "cheptel", "suivi"]
 ---
 
 ## 
 
-Pour les animaux de rente, l'ostéopathie est interessante dans les cas suivants :
+Pour les animaux d'élevage, l'ostéopathie est interessante dans les cas suivants :
 - la reproduction
 - la mise bas
 - la production laitière

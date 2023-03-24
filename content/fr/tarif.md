@@ -7,7 +7,7 @@ consultation:
   - label: "Chien/Chat"
     price: "50€/60CHF"
     bckg: "/images/tarif/vecteezy_husky.png"
-  - label: "Rente"
+  - label: "élevage"
     price: "65€/75CHF"
     bckg: "/images/tarif/kisspng-rente.png"
     url: "https://fr.wikipedia.org/wiki/Animal_de_rente#:~:text=Un%20animal%20de%20rente%2C%20aussi,d'autres%20fins%20agricoles%20%C2%BB."

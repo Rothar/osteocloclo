@@ -1,6 +1,6 @@
 <section class="map">
     <script src="/plugins/leaflet/leaflet.js" crossorigin=""></script>
-    <div> 
+    <!--div> 
         <div id="mapdiv" class="smallmap"></div>
         <script>
             var myLat = {{ site.Params.contact.map_latitude }};
@@ -22,5 +22,13 @@
             }).addTo(map);
 
         </script>
-  </div>
+
+
+    </div-->
+    <div style="display: flex; flex-direction: column; align-items: center;"> 
+        <iframe title="Smappen - Carte partagée" width="800" height="500" src="https://www.smappen.fr/app/iframe/5aujd" frameborder="0" allowfullscreen> </iframe> 
+    </div>
+    <div style="text-align: center"> 
+        <i style="font-size: 0.6rem"> Non contractuel </i> 
+    </div>
 </section>

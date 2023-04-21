@@ -1,30 +1,6 @@
 <section class="map">
     <script src="/plugins/leaflet/leaflet.js" crossorigin=""></script>
-    <!--div> 
-        <div id="mapdiv" class="smallmap"></div>
-        <script>
-            var myLat = {{ site.Params.contact.map_latitude }};
-            var myLng = {{ site.Params.contact.map_longitude }};
-            var map = L.map('mapdiv').setView([myLat,myLng], 10);
-            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                maxZoom: 18,
-                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-            }).addTo(map);
-            L.control.scale().addTo(map);
-            var marker = L.marker([myLat, myLng]).addTo(map);
-            marker.bindPopup("Bonjour,<br>Pour consulter les tarifs en fonction du périmètre d'action, <a href='/tarif'>cliquez ici</a> svp.").openPopup();
-
-            var circle = L.circle([myLat, myLng], {
-                color: 'navy',
-                fillColor: '#1a6edb',
-                fillOpacity: 0.2,
-                radius: 70000
-            }).addTo(map);
-
-        </script>
-
-
-    </div-->
+  
     <div style="display: flex; flex-direction: column; align-items: center;"> 
         <iframe title="Smappen - Carte partagée" width="100%" height="500" src="https://www.smappen.fr/app/iframe/5aujd" frameborder="0" allowfullscreen> </iframe> 
     </div>

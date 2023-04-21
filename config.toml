@@ -87,6 +87,12 @@ name = "Ordre National des Vétérinaires"
 url = "https://www.veterinaire.fr/la-profession-veterinaire/nos-grands-dossiers/osteopathie-animale"
 weight = 3
 
+[[params.external]]
+icon = "images/logo/SPA Mulhouse.jpeg"
+name = "SPA Mulhouse"
+url = "https://www.spa-mulhouse.fr/"
+weight = 4
+
 ################################################################################
 [languages]
   [languages.fr]

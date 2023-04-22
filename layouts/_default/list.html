@@ -17,6 +17,12 @@
 									<a href="{{ .RelPermalink }}"><img loading="lazy" class="image-blog-list" src="{{ .Params.image | relURL }}" alt="{{ .Title }}"></a>
 								</figure>
 								{{- end }}
+								{{ if isset .Params "video" -}}
+								<figure>
+									<a data-fancybox src="{{ .Params.video | relURL }}&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0"><i class="fas fa-play"></i></a>
+          
+								</figure>
+								{{- end }}
 							</div>
 							<div class="content-text">
 								<a href="{{ .RelPermalink }}"><h4>{{ .Title }}</h4></a>

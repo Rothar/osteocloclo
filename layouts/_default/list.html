@@ -19,7 +19,10 @@
 								{{- end }}
 								{{ if isset .Params "video" -}}
 								<figure>
-									<a src="{{ .Params.video }}"><img loading="lazy" class="image-blog-list" src="{{ .Params.bgi_title | relURL }}" alt="{{ .Title }}"><i class="fas fa-play"></i></a>
+									<video class="image-blog-list" controls autoplay poster="{{ .Params.bgi_title | relURL }}" muted>
+										<source src="{{ .Params.video | relURL }}" type=video/mp4>
+									</video>
+									<!--a src="{{ .Params.video }}"><img loading="lazy" class="image-blog-list" src="{{ .Params.bgi_title | relURL }}" alt="{{ .Title }}"><i class="fas fa-play"></i></a-->
 								</figure>
 								{{- end }}
 							</div>

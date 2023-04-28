@@ -19,8 +19,7 @@
 								{{- end }}
 								{{ if isset .Params "video" -}}
 								<figure>
-									<a data-fancybox src="{{ .Params.video | relURL }}&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0"><i class="fas fa-play"></i></a>
-          
+									<a src="{{ .Params.video }}"><img loading="lazy" class="image-blog-list" src="{{ .Params.bgi_title | relURL }}" alt="{{ .Title }}"><i class="fas fa-play"></i></a>
 								</figure>
 								{{- end }}
 							</div>

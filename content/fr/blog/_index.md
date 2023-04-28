@@ -4,7 +4,7 @@ draft: false
 bgi_title: "images/general/odin-moi.jpeg"
 menu:
   main:
-    name: "Blog"
+    name: "Articles"
     identifier: "blog"
     weight: 4
 ---

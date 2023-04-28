@@ -100,4 +100,11 @@ section.tarif div.container div.row{
 .pricingTable10:hover .read{background:#48bdc5}
 @media screen and (max-width:990px){.pricingTable10{margin-bottom:25px}
 }
+
+video::-webkit-media-controls-volume-slider {
+    display:none;
+}
+video::-webkit-media-controls-mute-button {
+    display:none;
+}
 /* Credit to https://bootsnipp.com/snippets/92erW */

@@ -14,6 +14,11 @@
 						{{ with .Params.image -}}
 									<img class="img-responsive img-fluid" loading="lazy" src="{{ . | relURL }}" alt="{{ $.Title }}">
 						{{- end }}
+						{{ if isset .Params "video" -}}
+							<video class="img-responsive img-fluid" controls autoplay poster="{{ .Params.bgi_title | relURL }}" muted>
+								<source src="{{ .Params.video | relURL }}" type=video/mp4>
+							</video>
+						{{- end }}
 						</figure>
 					</div>
 					<div class="content-text">

@@ -12,17 +12,16 @@
 					{{ range $paginator.Pages -}}
 						<div class="post item-holder">
 							<div class="image-box">
-								{{ if isset .Params "image" -}}
-								<figure>
-									<a href="{{ .RelPermalink }}"><img loading="lazy" class="image-blog-list" src="{{ .Params.image | relURL }}" alt="{{ .Title }}"></a>
-								</figure>
-								{{- end }}
 								{{ if isset .Params "video" -}}
-								<figure>
-									<video class="image-blog-list" controls autoplay poster="{{ .Params.bgi_title | relURL }}" muted>
-										<source src="{{ .Params.video | relURL }}" type=video/mp4>
-									</video>
-								</figure>
+									<figure>
+										<video class="image-blog-list" controls autoplay poster="{{ .Params.bgi_title | relURL }}" muted>
+											<source src="{{ .Params.video | relURL }}" type=video/mp4>
+										</video>
+									</figure>
+								{{ else if isset .Params "image" -}}
+									<figure>
+										<a href="{{ .RelPermalink }}"><img loading="lazy" class="image-blog-list" src="{{ .Params.image | relURL }}" alt="{{ .Title }}"></a>
+									</figure>
 								{{- end }}
 							</div>
 							<div class="content-text">

@@ -13,7 +13,7 @@ summary: "À la suite d'un traumatisme, il est important de faire un **suivi**. 
 
 À la suite d'un traumatisme, il est important de faire un **suivi**. En fonction du traumatisme le suivi et la rééducation seront différents.
 
-Sur la photo, on peut voir un chat qui a subi un traumatisme au niveau de l'arrière-main se traduisant par :
+Sur la vidéo, on peut voir un chat qui a subi un traumatisme au niveau de l'arrière-main se traduisant par :
 * Une paralysie des deux pattes arrière
 * Une paralysie de la queue
 * Une incontinence

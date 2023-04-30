@@ -5,6 +5,7 @@ date: 2023-04-20T11:07:10+06:00
 draft: false
 bgi_title : "images/general/chat_reeducation_photo.png"
 video: "images/general/Chat_reeducation.mp4"
+image : "images/general/chat_reeducation_photo.png"
 type: "post"
 categories: []
 tags: ["traumatisme", "rééducation", "stimulation", "suivi"]

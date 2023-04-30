@@ -11,13 +11,12 @@
 				<div class="item-holder">
 					<div class="image-box">
 						<figure>
-						{{ with .Params.image -}}
-									<img class="img-responsive img-fluid" loading="lazy" src="{{ . | relURL }}" alt="{{ $.Title }}">
-						{{- end }}
 						{{ if isset .Params "video" -}}
 							<video class="img-responsive img-fluid" controls autoplay poster="{{ .Params.bgi_title | relURL }}" muted>
 								<source src="{{ .Params.video | relURL }}" type=video/mp4>
 							</video>
+						{{ else if isset .Params "image" -}}
+							<img class="img-responsive img-fluid" loading="lazy" src="{{ .Params.image | relURL }}" alt="{{ $.Title }}">
 						{{- end }}
 						</figure>
 					</div>

@@ -1,0 +1,38 @@
+{{ define "main" }}
+
+<!-- checking blog -->
+{{ if (eq .Section "rapports") }}
+
+<section class="blog-section style-four section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9">
+          <div class="left-side">
+				{{ $paginator := .Paginate .Data.Pages -}}
+					{{ range $paginator.Pages -}}
+						<div class="post item-holder">
+							
+							<div class="content-text">
+								<a href="{{ .RelPermalink }}" target="_blank"><h4>{{ .Params.nom_animal }} - le {{ .Params.date_consultation }}</h4></a>
+									<a href="{{ .RelPermalink }}" target="_blank"><p>{{ .Params.motif_consultation | safeHTML }}</p></a>
+									<div class="link-btn"><a href="{{ .RelPermalink }}" target="_blank" class="btn-style-one">{{ i18n "read_more" }}</a></div>
+							</div>
+						</div>
+					{{- end }}
+
+					{{ partial "_pagination.html" . }}
+				</div>
+			</div>
+			<div class="col-lg-3"> 
+				<!-- {{ partial "blog-sidebar.html" . }} -->
+			</div>
+		</div>
+	</div>
+
+	<!-- regular page -->
+	{{ else -}}
+	<!-- {{ .Render "rapports/test" }} -->
+	{{- end }}
+	<!-- /regular page -->
+</section>
+{{ end }}

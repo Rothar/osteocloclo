@@ -1,0 +1,112 @@
+/* début css pour rapports pdf */
+body{
+    max-width: 1000px !important;
+}
+div#r_cadre {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    object-fit: contain;
+    border-color: #222222;
+    border-width: 3px;
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2px;
+    padding-top: 2px;
+  }
+  div#r_cadre hr {
+    border-color: #222222;
+    border-width: 1px !important;
+    border-style: solid !important;
+    width: 100%;
+    margin: -1px;
+    padding: 0;
+  }
+  div#r_cadre table tr td:first-child{
+    padding-left: 20px;
+  }
+  div#r_cadre table h4 {
+    display: inline-block;
+  }
+  table.item1 {
+    text-align: left;
+    border: none;
+    border-width: 0;
+    margin-top: 0;
+    width: 100%;
+  }
+  table.item1 tr td:first-child {
+    width: 35%;
+    text-align: center;
+  }
+  table.item1 tr td img.logosite {
+    width: 200px; 
+    height: auto; 
+  }
+  table.item1 p {
+    text-align: center;
+    font-size: 1.5em;
+  }
+  table.item1 p:first-child {
+    padding-top: 10px;
+    margin-bottom: 0;
+  }
+  table.item2{
+    width: 98%;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  table.item2 tr td.motif {
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+  table.item2 tr td.motif div {
+    font-size: 1.4rem;
+    color: #544f4f;
+  }
+  
+  div#r_cadre table tr td h4 span {
+    font-weight: normal;
+    display: inline-block;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    background-color: #d0cece;
+    color: #222222;
+  }
+  table.item3 {
+    width: 100%;
+  }
+  div#r_cadre table.item3 tr td {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+  }
+  table.item4 tr td,
+  table.item5 tr td,
+  table.item6 tr td {
+    padding-top: 15px;
+    padding-left: 3px;
+  }
+  table.item4 tr td div ul,
+  table.item5 tr td div ul {
+    font-size: 1.4rem;
+    color: #544f4f;
+  }
+  table.item6 tr td div {
+    font-size: 1.4rem;
+    color: #544f4f;
+  }
+  .zone-circle {
+    position: absolute;
+    width: 20px; height: 45px;
+    border-radius: 40px;
+    border: 3px solid red;
+  }
+
+  /* fin css pour rapports pdf */  

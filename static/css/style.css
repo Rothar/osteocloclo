@@ -3388,10 +3388,3 @@ div.footer-top figure.logo img {
 div.footer-top figure.logo:hover {
   box-shadow: 0 8px 16px 0 rgba(255,255,255,0.5);
 }
-
-/* début css pour rapports pdf */
-table#rapport tr th img.logosite {
-  width: 25%;
-  height: 25%;
-}
-/* fin css pour rapports pdf */

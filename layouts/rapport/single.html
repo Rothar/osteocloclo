@@ -1,0 +1,107 @@
+<html><head>
+    <link rel="stylesheet" href="/plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/print.css">
+</head><body>
+ {{ if (eq .Section "rapport") }}
+
+ <div class="grid-container" id="r_cadre">
+    <table class="item1">
+        <tr>
+            <td>
+                <img loading="lazy" class="img-fluid logosite" src="/images/logo/logo_print.png" alt="{{ site.Title }}">
+            </td>
+            <td>
+                <p>{{ site.Params.description }}</p>
+                <p>SIRET: {{ site.Params.siret }}</p>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <table class="item2">
+        <tr>
+            <td>
+                <h4>Date : <span>{{ .Params.date_consultation }}</span></h4>
+            </td>
+            <td>
+                <h4>Nom de l'animal : <span>{{ .Params.nom_animal }}</span></h4>
+            </td>
+            <td>
+                <h4>Nom du propriétaire : <span>{{ .Params.nom_proprietaire }}</span></h4>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" class="motif">
+                <h3>Motif de consultation :</h3><div class="para">{{ .Params.motif_consultation | safeHTML }}</div>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <table class="item3" id="zone-image-container">
+        <tr>
+            <td>
+                <img loading="lazy" class="img-fluid" src="/images/rapport/{{ .Params.animal }}_{{ if .Params.inverse }}2{{else}}1{{end}}.jpeg" alt="Squelette animal - vue côté {{ if .Params.inverse }}droit{{else}}gauche{{end}}" id="animal_{{ if .Params.inverse }}2{{else}}1{{end}}">
+            </td>
+            <td>
+                <img loading="lazy" class="img-fluid" src="/images/rapport/{{ .Params.animal }}_{{ if .Params.inverse }}1{{else}}2{{end}}.jpeg" alt="Squelette animal - vue côté {{ if .Params.inverse }}gauche{{else}}droit{{end}}" id="animal_{{ if .Params.inverse }}1{{else}}2{{end}}">
+            </td>
+        </tr>
+    </table>
+    <hr>
+
+    <table class="item4">
+        <tr>
+            <td>
+                <h3>Dysfonctions :</h3>
+                <div class="liste">
+                    <ul>
+                        {{ range .Params.dysfonctions }} 
+                          <li>{{ . }}</li>
+                        {{ end }}
+                      </ul>
+                </div>
+            </td>
+        </tr>   
+    </table>
+    
+    <hr>
+    <table class="item5">
+        <tr><td>
+            <h3>Normalisation :</h3>
+            <div class="liste">
+                <ul>
+                    {{ range .Params.normalisation }} 
+                      <li>{{ . }}</li>
+                    {{ end }}
+                  </ul>
+            </div>
+        </td></tr>
+    </table>
+
+    <hr />
+    <table class="item6">
+        <tr><td>
+            <h3>Conseils :</h3><div class="para">{{ .Params.conseils | safeHTML }}</div>
+        </td></tr>
+    </table>
+  </div>
+  
+<script src="/js/print.js" ></script>
+<style>
+{{ $.Scratch.Set "cpt" 0 }}
+  {{ range .Params.spots }}
+    {{ $.Scratch.Set "cpt" (add ($.Scratch.Get "cpt") 1) }}
+    .zone-{{ $.Scratch.Get "cpt" }} {
+        left: {{ .left }}px;
+        top: {{ .top }}px;
+    }
+  {{ end }}
+</style>
+<script>
+    drawZones([
+    {{ range $num := (seq ($.Scratch.Get "cpt") ) }}
+        {{ . }},
+    {{ end }}
+        ]);
+</script>
+{{ end }}
+</body></html>

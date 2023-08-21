@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <!-- checking blog -->
-{{ if (eq .Section "rapports") }}
+{{ if (eq .Section "rapport") }}
 
 <section class="blog-section style-four section">
     <div class="container">
@@ -15,7 +15,10 @@
 							<div class="content-text">
 								<a href="{{ .RelPermalink }}" target="_blank"><h4>{{ .Params.nom_animal }} - le {{ .Params.date_consultation }}</h4></a>
 									<a href="{{ .RelPermalink }}" target="_blank"><p>{{ .Params.motif_consultation | safeHTML }}</p></a>
-									<div class="link-btn"><a href="{{ .RelPermalink }}" target="_blank" class="btn-style-one">{{ i18n "read_more" }}</a></div>
+									<div class="link-btn"><a href="{{ .RelPermalink }}" 
+										target="popup" 
+  onclick="window.open('{{ .RelPermalink }}','popup','width=1010,height=850'); return false;"
+										class="btn-style-one">PDF</a></div>
 							</div>
 						</div>
 					{{- end }}

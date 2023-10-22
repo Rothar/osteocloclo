@@ -13,15 +13,29 @@
         {{ range ( sort (os.ReadDir "static/images/galerie") ".Name" "desc" ) }}
           {{ if not ( .IsDir ) }}
           {{ $tabData := split .Name "_" }}
-            <div class="col-lg-4 col-md-6">
-              <div class="gallery-item">
-                <img loading="lazy" src="/images/galerie/{{ .Name }}" class="img-fluid" alt="gallery-image">
-                <a data-fancybox="images" href="/images/galerie/{{ .Name }}"></a>
-                <h3>{{ index ($tabData) 0 }}</h3>
-                {{ $tabData2 := split (index ($tabData) 1) "." }}
-                <p>{{ index ($tabData2) 0 }} </p>
+            {{ $extension := split .Name "." }}
+            {{ if eq (index ($extension) 1) "mp4"}}
+              <div class="col-lg-4 col-md-6">
+                <div class="gallery-item">
+                    <video class="col-lg col-md" controls autoplay poster="/images/galerie/{{ .Name }}" muted>
+                      <source src="/images/galerie/{{ .Name }}" type=video/mp4>
+                    </video>
+                  <h3>{{ index ($tabData) 0 }}</h3>
+                  {{ $tabData2 := split (index ($tabData) 1) "." }}
+                  <p>{{ index ($tabData2) 0 }} </p>
+                </div>
               </div>
-            </div>
+            {{ else }}
+              <div class="col-lg-4 col-md-6">
+                <div class="gallery-item">
+                  <img loading="lazy" src="/images/galerie/{{ .Name }}" class="img-fluid" alt="gallery-image">
+                  <a data-fancybox="images" href="/images/galerie/{{ .Name }}"></a>
+                  <h3>{{ index ($tabData) 0 }}</h3>
+                  {{ $tabData2 := split (index ($tabData) 1) "." }}
+                  <p>{{ index ($tabData2) 0 }} </p>
+                </div>
+              </div>
+            {{ end }}
           {{ end }}
         {{ end }}
 

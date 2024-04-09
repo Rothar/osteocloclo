@@ -47,6 +47,13 @@ testimonials:
   - name: "Sabine"
     text: "Chloé est intervenue pour notre minette de 4 ans Olympe qui montrait des signes d'inconfort au niveau du train arrière. Elle a identifié la zone douloureuse et le point de blocage. Chloé a traité ce qui a été possible de traiter, tout en douceur en prenant bien le temps necessaire en respectant l'émotionnel de notre minette. Merci pour le diagnostic et le soulagement."
     image: ""
+  - name: "NF"
+    text: "Mon petit chien marche de nouveau sur 4 pattes, il est devant en promenade. Il a retrouvé toute son énergie."
+    image: ""
+  - name: "CR"
+    text: "Pépito : rien à voir avec avant votre venue. Il a
+    retrouvé sa vitalité, on peut le caresser à nouveau sans signe de douleur !"
+    image: ""
   #- name: "test3 test3"
   #  text: "texte 23"
   #  image: ""
